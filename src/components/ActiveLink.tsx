@@ -24,9 +24,6 @@ export function ActiveLink({ children, shouldMatchExactHref = true, ...rest } : 
         isActive = true;
     }
 
-    console.log(asPath, String(rest.href))
-
-
     return (
         <Link {...rest}>
             {cloneElement(children, {
